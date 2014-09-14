@@ -1,0 +1,17 @@
+{
+  "appenders": [
+    {
+      "type": "console"
+    },
+    {
+      "type": "file",
+      "absolute": true,
+      "filename": "logs/app.log",
+      "maxLogSize": 20480,
+      "backups": 10       
+    }
+  ],
+  "levels": {
+    "[all]": "DEBUG"
+  }
+}
