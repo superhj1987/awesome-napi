@@ -1,5 +1,5 @@
 {
-  "name": "aladingHerms-api",
+  "name": "awesome-api",
   "version": "0.0.1",
   "main": "app.js",
   "private": true,
@@ -15,16 +15,11 @@
     "response-time": "1.0.0",
     "utility": "0.1.16",
     "validator": "3.17.0",
-    "orm":"2.1.15",
     "node-uuid" : "1.4.1",
     "mysql":"2.3.2",
-    "log4js":"0.6.20",
-    "redis": "0.8.5",
-    "request" : "2.40.0",
-    "xmlreader" : "0.2.3",
-    "ccap" : "0.4.3",
-    "nodemailer" : "1.2.1",
-    "nodemailer-smtp-transport" : "0.1.12"
+    "orm":"2.1.15",
+    "log4js" : "0.6.20",
+    "redis": "0.8.5"
   },
   "devDependencies": {
     "supertest": "*",

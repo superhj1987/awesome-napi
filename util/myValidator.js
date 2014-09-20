@@ -3,6 +3,12 @@ var validator = require('validator');
 
 var MyValidator = validator;
 
+/**
+ * verify mobile format
+ *
+ * @param {String} mobile
+ * @return {Bool}
+ */
 MyValidator.isMobile = function(mobile){
 	if(!mobile) return false;
 
@@ -14,8 +20,11 @@ MyValidator.isMobile = function(mobile){
 } 
 
 /**
-判断用户名是否由汉字、字母、数字、下划线组成
-**/
+ * verify userName format(alpha number _)
+ *
+ * @param {String} userName
+ * @return {Bool}
+ */
 MyValidator.isUserName = function(userName){
 	if(!userName) return false;
 
