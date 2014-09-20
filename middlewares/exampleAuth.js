@@ -1,7 +1,7 @@
-var auth = require('./auth');
-var securityService = require('../services/SecurityService');
+var Auth = require('./Auth');
+var securityService = require('../services/securityService');
 
-var authInstance = new auth(securityService);
+var authInstance = new Auth(securityService);
 
 exports.tokenRequired = function(req, res, next){
   authInstance.tokenRequired(req,res,next);

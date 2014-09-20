@@ -1,3 +1,7 @@
+/*
+*api权限、安全相关，包括验证token、authorization、生成authToken等
+*/
+
 var uuid = require('node-uuid');
 var crypto = require('crypto');
 var util = require('../util/util');
