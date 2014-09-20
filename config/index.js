@@ -22,7 +22,7 @@ var config = {
 
   api_version:'v1',
   
-  authTokenExpire : 30 * 60 //authToken的过期时间/se 
+  authTokenExpire : 30 * 60 //authToken的过期时间(second)
 };
 
 module.exports = config;

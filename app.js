@@ -30,7 +30,7 @@ app.use(require('method-override')());
 webFilter.setFilter(app);
 
 app.use('/public',express.static(staticDir));
-require('./models')(app);
+//require('./models')(app);
 
 app.use(errorHandler({ dumpExceptions: true, showStack: true }));
 
