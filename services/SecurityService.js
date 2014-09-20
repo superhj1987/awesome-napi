@@ -15,7 +15,7 @@ var tokens = ['80451223123121secersb678954'];
 
 var AUTH_TOKEN_PREFIX = 'AuthToken_';
 
-var SecurityService = module.exports;
+var securityService = module.exports;
 
 /*
 *验证token
