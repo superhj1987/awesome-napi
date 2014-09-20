@@ -1,5 +1,5 @@
 var config = require('../config').config;
-var redisClient = require('../common/RedisClient');
+var redisClient = require('../common/redisClient');
 var util = require('../util/util');
 var constant = require('../util/constant');
 var logger = require('log4js').getLogger();
