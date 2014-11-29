@@ -36,7 +36,6 @@ app.use('/public',express.static(staticDir));
 
 if(config.debug){
    app.use(errorHandler({ dumpExceptions: true, showStack: true }));
-
 }
 
 // routes

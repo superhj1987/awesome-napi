@@ -8,7 +8,7 @@
 
  	app.get('/authorizationExample', auth.authorizationRequired, site.authorizationExample);
 
-  	app.get('*', function(req, res){
+  	app.all('*', function(req, res){
   		res.send(404,"opps!!!");
 	});
 };
