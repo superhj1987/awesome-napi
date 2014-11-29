@@ -16,8 +16,7 @@ function errorFilter(err, req, res, next){
 
 function loggerFilter(req, res, next){
   if(!!req.get("token") || !!req.get("Authorization")){
-    logger.info('client ip ：', util.getRemoteIp(req));
-  	logger.debug('request logger, method : %j, url : %j', req.method, req.url);
+  	logger.debug('request logger, method : %j, url : %j, client ip : %j', req.method, req.url, util.getRemoteIp(req));
   	logger.debug(req.body);
   }
 

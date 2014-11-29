@@ -9,6 +9,14 @@
       "filename": "logs/app.log",
       "maxLogSize": 20480,
       "backups": 10       
+    },
+    {
+      "type": "file",
+      "absolute": true,
+      "filename": "logs/access.log",
+      "maxLogSize": 20480,
+      "backups": 10,
+      "category":"access"       
     }
   ],
   "levels": {
