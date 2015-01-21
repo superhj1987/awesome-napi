@@ -1,4 +1,4 @@
-awesome-api
+awesome-napi
 ===========
 
 一个典型的基于express的api项目结构，借鉴了nodeclub相关代码。包含了：
