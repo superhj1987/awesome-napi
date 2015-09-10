@@ -32,7 +32,7 @@ exports.postLimit = function (req, res, next) {
         }
       }
 
-      redisClient.set(cacheKey,Date.now());
+      redisClient.set(cacheKey,Date.now());//这里可以使用设置超时时间来控制频率
       next();
   });
 };
@@ -60,7 +60,7 @@ exports.sendLimit = function(req,res,next){
     }else if((Date.now() -  timeTag) <=  SEND_INTERVAL){
       util.sendResult(res,constant.CODE_FORBIDDEN,'','访问频率超限');
     }else{
-      redisClient.set(cacheKey, Date.now());
+      redisClient.set(cacheKey, Date.now());//这里可以使用设置超时时间来控制频率
      
       next();
     }
